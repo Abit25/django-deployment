@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>User Data</title>
+  </head>
+  <body>
+  {% if names %}
+  {% for nm in names %}
+  <ul>
+    <li>
+        <ol>
+          <li>{{ nm.Fname }}</li>
+          <li>{{ nm.Lname }}</li>
+          <li>{{ nm.Email }}</li>
+        </ol>
+    </li>
+  </ul>
+  {% endfor %}
+  {% endif %}
+
+  </body>
+</html>
